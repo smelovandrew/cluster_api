@@ -10,7 +10,7 @@ const API_PORT = Number(process.env.API_PORT ?? 8000);
 const cluster = new NodeCluster(path.join(__dirname, './child.js'), NODES_COUNT)
 
 app.listen(API_PORT, () => {
-  console.log(`Example app listening at http://localhost:${API_PORT}`)
+  console.log(`Cluster app listening at http://localhost:${API_PORT}`)
 })
 
 app.use(express.json())

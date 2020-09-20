@@ -11,7 +11,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "run": "env-cmd node dist/index.js"
+    "run": "tsc & env-cmd node dist/index.js",
+    "build": "tsc"
   },
   "peerDependencies": {},
   "prettier": {
